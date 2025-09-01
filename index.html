@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Álvaro Ospino</title>
+    <link rel="icon" href="assets/img/foto.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style media="print">
+        /* Estilos para impresión */
+        body {
+            font-size: 12pt;
+            line-height: 1.4;
+            color: #333 !important;
+        }
+
+        .container {
+            display: block !important;
+            max-width: none !important;
+            margin: 0 !important;
+            padding: 20px !important;
+        }
+
+        .sidebar {
+            display: block !important;
+            width: 100% !important;
+            position: static !important;
+            background: transparent !important;
+            color: #333 !important;
+            margin-bottom: 30px !important;
+            page-break-after: auto;
+        }
+
+        .profile-section {
+            text-align: center !important;
+            margin-bottom: 20px !important;
+        }
+
+        .profile-img-container {
+            display: block !important;
+            margin: 0 auto 15px auto !important;
+        }
+
+        .profile-img {
+            width: 80px !important;
+            height: 80px !important;
+            border-radius: 50% !important;
+            border: 2px solid #333 !important;
+        }
+
+        .status-indicator {
+            display: none !important;
+        }
+
+        .sidebar h1 {
+            color: #333 !important;
+            font-size: 18pt !important;
+            margin: 10px 0 !important;
+        }
+
+        .role {
+            color: #666 !important;
+            font-size: 12pt !important;
+        }
+
+        .contact-info {
+            margin-bottom: 20px !important;
+        }
+
+        .contact-info .section-title {
+            color: #333 !important;
+            font-size: 14pt !important;
+            margin-bottom: 10px !important;
+            border-bottom: 1px solid #333 !important;
+            padding-bottom: 5px !important;
+        }
+
+        .contact-item {
+            margin-bottom: 8px !important;
+            font-size: 11pt !important;
+            color: #333 !important;
+        }
+
+        .main-content {
+            width: 100% !important;
+            max-width: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        .section {
+            page-break-inside: avoid;
+            margin-bottom: 25px !important;
+        }
+
+        .section-title {
+            color: #333 !important;
+            font-size: 14pt !important;
+            margin-bottom: 15px !important;
+            border-bottom: 1px solid #333 !important;
+            padding-bottom: 5px !important;
+        }
+
+        .item-header {
+            page-break-inside: avoid;
+        }
+
+        .item-title {
+            color: #333 !important;
+            font-size: 12pt !important;
+        }
+
+        .item-subtitle {
+            color: #666 !important;
+            font-size: 11pt !important;
+        }
+
+        .item-date {
+            color: #666 !important;
+            font-size: 11pt !important;
+        }
+
+        .item-description {
+            font-size: 11pt !important;
+            color: #333 !important;
+        }
+
+        .experience-item,
+        .education-item,
+        .project-item {
+            page-break-inside: avoid;
+            margin-bottom: 20px !important;
+        }
+
+        .tag {
+            background: #f0f0f0 !important;
+            color: #333 !important;
+            border: 1px solid #ddd !important;
+            font-size: 10pt !important;
+        }
+
+        .skill-item {
+            margin-bottom: 10px !important;
+        }
+
+        .skill-name {
+            font-size: 11pt !important;
+            color: #333 !important;
+        }
+
+        .skill-bar {
+            border: 1px solid #ddd !important;
+            height: 8px !important;
+        }
+
+        .skill-progress {
+            background: #333 !important;
+        }
+
+        .download-btn,
+        .demo-buttons {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile-section">
+                <div class="profile-img-container">
+                    <img src="assets/img/ospino.gif" alt="Foto de perfil" class="profile-img">
+                    <div class="status-indicator"></div>
+                </div>
+                <h1>ÁLVARO OSPINO</h1>
+                <p class="role">Desarrollador Full Stack</p>
+            </div>
+
+            <div class="contact-info">
+                <h2 class="section-title">CONTACTO</h2>
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <span>adospino12@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <span>+57 324 409 0606</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    <span>LinkedIn/alvaro-ospino</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github contact-icon"></i>
+                    <span>GitHub/alvaroospino</span>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <span>Santamarta, Colombia</span>
+                </div>
+            </div>
+
+            <button class="download-btn">
+                <i class="fas fa-download"></i> Descargar CV en PDF
+            </button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="section">
+                <h2 class="section-title">PERFIL PROFESIONAL</h2>
+                <p class="item-description">
+                    Estudiante de Ingeniería de Sistemas con experiencia en el desarrollo de
+                    proyectos personales y académicos de software. Apasionado por el desarrollo web
+                    Full Stack, con conocimientos en frontend (HTML, CSS, JavaScript, React) y backend
+                    (PHP, Laravel, MySQL, PostgreSQL). Me caracterizo por el aprendizaje constante,
+                    la autogestión y la capacidad de transformar ideas en aplicaciones funcionales.
+                    Busco mi primera oportunidad profesional para aportar mis habilidades, seguir
+                    creciendo en el área tecnológica y contribuir con soluciones creativas e innovadoras.
+                </p>
+            </div>
+
+
+            <div class="section">
+                <h2 class="section-title">EXPERIENCIA PRÁCTICA</h2>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div>
+                            <h3 class="item-title">Desarrollador Web</h3>
+                            <p class="item-subtitle">Proyectos Personales</p>
+                        </div>
+                        <span class="item-date">2022 - Presente</span>
+                    </div>
+                    <p class="item-description">
+                        Desarrollo de aplicaciones y páginas web como práctica profesional independiente.
+                        Implementación de diseños responsivos, integración de bases de datos y consumo de APIs.
+                        Enfocado en el uso de tecnologías modernas para fortalecer mis habilidades y construir un
+                        portafolio sólido.
+                    </p>
+                    <div class="tag-container">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div>
+                            <h3 class="item-title">Desarrollador Colaborador</h3>
+                            <p class="item-subtitle">Proyectos Académicos y Open Source</p>
+                        </div>
+                        <span class="item-date">2023</span>
+                    </div>
+                    <p class="item-description">
+                        Participación en proyectos académicos y colaborativos de código abierto,
+                        aplicando metodologías ágiles, control de versiones con GitHub y trabajo en equipo remoto.
+                    </p>
+                    <div class="tag-container">
+                        <span class="tag">Git & GitHub</span>
+                        <span class="tag">Agile</span>
+                        <span class="tag">Laravel</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">EDUCACIÓN</h2>
+
+                <div class="education-item">
+                    <div class="item-header">
+                        <div>
+                            <h3 class="item-title">Ingeniería de Sistemas</h3>
+                            <p class="item-subtitle">Universidad Del Magdalena</p>
+                        </div>
+                        <span class="item-date">2022 - 2026</span>
+                    </div>
+                    <p class="item-description">
+                        Formación integral en desarrollo de software, bases de datos, arquitectura de sistemas
+                        y gestión de proyectos tecnológicos.
+                    </p>
+                </div>
+
+                <div class="education-item">
+                    <div class="item-header">
+                        <div>
+                            <h3 class="item-title">Certificación Full Stack Developer</h3>
+                            <p class="item-subtitle">Plataforma de Educación Online</p>
+                        </div>
+                        <span class="item-date">2025</span>
+                    </div>
+                    <p class="item-description">
+                        Especialización en tecnologías Full Stack (PHP, Laravel, React, MySQL) con proyectos prácticos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">PROYECTOS DESTACADOS</h2>
+
+                <div class="project-item">
+                    <div class="item-header">
+                        <div>
+                            <h3 class="item-title">E-Commerce Platform</h3>
+                            <p class="item-subtitle">Proyecto Personal</p>
+                        </div>
+                        <span class="item-date">2024</span>
+                    </div>
+                    <p class="item-description">
+                        Plataforma de comercio electrónico completa con carrito de compras, pasarela de pagos
+                        integrada y panel de administración. Más de 1000 usuarios activos mensuales.
+                    </p>
+                    <div class="tag-container">
+                        <span class="tag">Next.js</span>
+                        <span class="tag">Stripe API</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="item-header">
+                        <div>
+                            <h3 class="item-title">Task Management App</h3>
+                            <p class="item-subtitle">Open Source</p>
+                        </div>
+                        <span class="item-date">2025</span>
+                    </div>
+                    <p class="item-description">
+                        Aplicación de gestión de tareas con funcionalidades de colaboración en tiempo real,
+                        drag & drop, y notificaciones push.
+                    </p>
+                    <div class="tag-container">
+                        <span class="tag">React</span>
+                        <span class="tag">Socket.io</span>
+                        <span class="tag">Redis</span>
+                        <span class="tag">Express</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">HABILIDADES TÉCNICAS</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    <div>
+                        <h3 style="color: var(--accent-color); font-size: 1.1rem; margin-bottom: 15px;">Frontend</h3>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>HTML5 & CSS3</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>JavaScript</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>TypeScript</span>
+                                <span>45%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>React.js</span>
+                                <span>40%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Bootstrap</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 50%"></div>
+                            </div>
+                        </div>
+
+                        <h3 style="color: var(--accent-color); font-size: 1.1rem; margin: 20px 0 15px 0;">Tools & DevOps
+                        </h3>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Git & GitHub</span>
+                                <span>75</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Docker</span>
+                                <span>30%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Figma</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style="color: var(--accent-color); font-size: 1.1rem; margin-bottom: 15px;">Backend &
+                            Databases</h3>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>PHP & Laravel</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Java</span>
+                                <span>30%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Python</span>
+                                <span>30%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>PostgreSQL</span>
+                                <span>67%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 67%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>MySQL</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
